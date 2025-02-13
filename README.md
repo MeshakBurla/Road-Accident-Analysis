@@ -199,18 +199,6 @@ ORDER BY Total_Casualties DESC;
 
 ![Image](https://github.com/user-attachments/assets/dae232c8-b2a4-4ec8-ba2a-abf0b7907d9a)
 
-# Power Bi Dashboard snapshot:
-
-![Image](https://github.com/user-attachments/assets/9ca33b83-d722-4976-864a-56e6109b412b)
-
-# Excel dashboard Snapshot:
-
-![Image](https://github.com/user-attachments/assets/891462a5-d25d-4fe5-9644-b4b3da256ec0)
-
-# Publish To Power BI
-
-![Image](https://github.com/user-attachments/assets/57c4bc79-76f7-4f0d-89ec-17e5c5d2dc67)
-
 ### Creating a new column following DAX expression was write.
 
 **YEAR**:
@@ -244,6 +232,17 @@ ORDER BY Total_Casualties DESC;
 
          PY Accidents = CALCULATE(COUNT(Road_accident[Accident_index],'Calendar'[Data]),SAMEPERIODLASTYEAR('Calendar'[Data]))
 
+# Power Bi Dashboard snapshot:
+
+![Image](https://github.com/user-attachments/assets/9ca33b83-d722-4976-864a-56e6109b412b)
+
+# Excel dashboard Snapshot:
+
+![Image](https://github.com/user-attachments/assets/891462a5-d25d-4fe5-9644-b4b3da256ec0)
+
+# Publish To Power BI
+
+![Image](https://github.com/user-attachments/assets/57c4bc79-76f7-4f0d-89ec-17e5c5d2dc67)
 
 # Conclusion:
 

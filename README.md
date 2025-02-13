@@ -1,8 +1,8 @@
-# Road-Accident-Analysis
+# Road-Accidents-Analysis
  
 # Project overview
 
-## Title: Road Accident Analysis
+## Title: Road Accidents Analysis
 
 ## Level: Beginner
 
@@ -17,11 +17,12 @@ https://1drv.ms/x/c/d45e15bd8bed1566/ETYegFDmaolPmbar7Ixc0K4BVrOXDSIwV0PRjFadU0U
 https://app.powerbi.com/reportEmbed?reportId=dc33f87a-5489-4792-958fec297e7059ef&autoAuth=true&ctid=51302999-bb18-4fba-98bf-3a7ab3f07f13 
 
 # Objectives:
+
 1. Identify Causes and Risk Factors – Analyze accident data to determine primary causes such as speeding, drunk driving, weather conditions, or infrastructure issues.
    
-3. Improve Road Safety Measures – Develop strategies like better road designs, traffic regulations, and awareness campaigns to reduce accidents.
+2. Improve Road Safety Measures – Develop strategies like better road designs, traffic regulations, and awareness campaigns to reduce accidents.
    
-5. Enhance Emergency Response – Assess accident patterns to improve emergency medical services and response times for accident victims.
+3. Enhance Emergency Response – Assess accident patterns to improve emergency medical services and response times for accident victims.
    
 4.Support Policy and Legislation – Provide data-driven insights for implementing or refining traffic laws, such as seatbelt enforcement and speed limits.
 

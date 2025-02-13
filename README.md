@@ -167,6 +167,7 @@ GROUP BY urban_or_rural_area;
 
 ![Image](https://github.com/user-attachments/assets/3b450815-b3de-4309-acb6-837a3247263a)
 
+### Light_Condition CY_Casualties_PCT of Road Accidents
 
 ```sql
 SELECT  
@@ -183,8 +184,13 @@ SELECT
    CASE 
          WHEN light_conditions IN ('Daylight') THEN 'Day' 
  	       WHEN light_conditions IN ('Darkness - lighting unknown','Darkness - lights lit ','Darkness - lights unlit','Darkness - no lighting') THEN 'Night' 
-END; 
+END;
+```
 ![Image](https://github.com/user-attachments/assets/ef7e31c4-b041-414a-ad65-500da69462c3)
+
+### TOP 10 local_authority Total_Casualties of Road accidents
+
+```sql
 SELECT TOP 10 local_authority,SUM(number_of_casualties) AS Total_Casualties 
 FROM [ROAD ACCIDENTS] 
 GROUP BY local_authority 
@@ -193,44 +199,56 @@ ORDER BY Total_Casualties DESC;
 
 ![Image](https://github.com/user-attachments/assets/dae232c8-b2a4-4ec8-ba2a-abf0b7907d9a)
 
-Power Bi Dashboard snapshot:
+# Power Bi Dashboard snapshot:
 
 ![Image](https://github.com/user-attachments/assets/9ca33b83-d722-4976-864a-56e6109b412b)
 
-Excel dashboard Snapshot:
+# Excel dashboard Snapshot:
 
 ![Image](https://github.com/user-attachments/assets/891462a5-d25d-4fe5-9644-b4b3da256ec0)
 
-Publish To Power BI
+# Publish To Power BI
 
 ![Image](https://github.com/user-attachments/assets/57c4bc79-76f7-4f0d-89ec-17e5c5d2dc67)
 
 ### Creating a new column following DAX expression was write.
 
 **YEAR**:
+
          YEAR = YEAR('Calendar'[Data])
          
 **Month**:
+
           Month = FORMAT('Calendar'[Data],"mmm")
          
  
 ### Following DAX expression was written to find Measures.
 
 **CY Casualties**:
+
          CY Casualties = TOTALYTD(SUM(Road_accident[Number_of_Casualties]),'Calendar'[Data])
 
 **PY Casualties**:
+
          PY Casualties = CALCULATE(SUM(Road_accidents[Number_of_casualties]),SAMEPERIODLASTYEAR('Calendar'[Data]))
-**YOY Casualties**:      
+	 
+**YOY Casualties**:     
+
          YOY Casualties = ([CY Csaulaties]-[PY Casualties])/[PY Casualties]
+	 
 **CY Accidents**:
+
          CY Accidents = TOTALYTD(COUNT(Road_accident[Accident_index],'Calendar'[Data])
+	 
 **PY Accidents**:
+
          PY Accidents = CALCULATE(COUNT(Road_accident[Accident_index],'Calendar'[Data]),SAMEPERIODLASTYEAR('Calendar'[Data]))
 
 
 # Conclusion:
-Road accident analysis helps identify key risk factors such as poor road conditions, weather impacts, driver behavior, and vehicle-related issues. By analyzing accident severity, casualty numbers, and environmental conditions, authorities can implement better safety measures, improve infrastructure, and enforce regulations. Data-driven insights from accident trends aid in reducing fatalities, enhancing emergency response, and minimizing economic losses. Ultimately, continuous monitoring and strategic interventions are crucial for improving road safety and saving lives
+
+Road accident analysis helps identify key risk factors such as poor road conditions, weather impacts, driver behavior, and vehicle-related issues. By analyzing accident severity, casualty numbers, and environmental conditions, authorities can implement better safety measures, improve infrastructure, and enforce regulations. Data-driven insights from accident trends aid in reducing fatalities, enhancing emergency response, and minimizing economic losses. Ultimately, continuous monitoring and strategic interventions are crucial for improving road safety and saving lives.
+
 # How to use:
 
 1.**clone the Repository**: Clone this project repository from GitHub.
@@ -241,37 +259,5 @@ Road accident analysis helps identify key risk factors such as poor road conditi
 
 4.**Explore and Modify**:Feel free to modify the queries to explore different aspect of the dataset or answer
 
-snapshot:
 
-![Image](https://github.com/user-attachments/assets/9ca33b83-d722-4976-864a-56e6109b412b)
-
-Excel dashboard:
-
-![Image](https://github.com/user-attachments/assets/891462a5-d25d-4fe5-9644-b4b3da256ec0)
-
-Publish To Power BI
-
-![Image](https://github.com/user-attachments/assets/57c4bc79-76f7-4f0d-89ec-17e5c5d2dc67)
-
-Creating a new column following DAX expression was write.
-**YEAR**:
-         YEAR = YEAR('Calendar'[Data])
-         
-**Month**:
-          Month = FORMAT('Calendar'[Data],"mmm")
-         
- 
-Following DAX expression was written to find Measures.
-
-**CY Casualties**:
-         CY Casualties = TOTALYTD(SUM(Road_accident[Number_of_Casualties]),'Calendar'[Data])
-
-**PY Casualties**:
-         PY Casualties = CALCULATE(SUM(Road_accidents[Number_of_casualties]),SAMEPERIODLASTYEAR('Calendar'[Data]))
-**YOY Casualties**:      
-         YOY Casualties = ([CY Csaulaties]-[PY Casualties])/[PY Casualties]
-**CY Accidents**:
-         CY Accidents = TOTALYTD(COUNT(Road_accident[Accident_index],'Calendar'[Data])
-**PY Accidents**:
-         PY Accidents = CALCULATE(COUNT(Road_accident[Accident_index],'Calendar'[Data]),SAMEPERIODLASTYEAR('Calendar'[Data]))
 

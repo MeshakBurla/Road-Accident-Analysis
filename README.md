@@ -24,11 +24,10 @@ https://app.powerbi.com/reportEmbed?reportId=dc33f87a-5489-4792-958fec297e7059ef
    
 3. Enhance Emergency Response – Assess accident patterns to improve emergency medical services and response times for accident victims.
    
-4.Support Policy and Legislation – Provide data-driven insights for implementing or refining traffic laws, such as seatbelt enforcement and speed limits.
+  4.Support Policy and Legislation – Provide data-driven insights for implementing or refining traffic laws, such as seatbelt enforcement and speed limits.
 
-5.Reduce Economic and Social Impact – Minimize financial losses from accidents (medical costs, property damage) and reduce emotional distress by preventing injuries and 
-
-fatalities.
+  5.Reduce Economic and Social Impact – Minimize financial losses from accidents (medical costs, property damage) and reduce emotional distress by preventing injuries and   
+  fatalities.
 
 # Project Structure:
 

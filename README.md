@@ -104,7 +104,7 @@ WHERE accident_severity = 'Serious' AND YEAR(accident_date) = '2022';
 ```
 ![Image](https://github.com/user-attachments/assets/0c980466-63e5-4d96-8de5-61ce4bd20788) 
 
-###  CY_Casulaties  of Road Accidents
+###  Vehicle Groups CY_Casulaties  of Road Accidents
 
 ```sql
 SELECT  

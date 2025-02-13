@@ -132,11 +132,11 @@ GROUP BY
 ```
 ![Image](https://github.com/user-attachments/assets/49c6db16-d19b-44cc-9a89-0a2dcf198d4f) 
 
-###  Month_Name and  Month_Name of Road Accidents
+###  Month_Name and CY_Casulaties of Road Accidents
 
 ```sql
 SELECT DATENAME(MONTH, accident_date) AS Month_Name, SUM(number_of_casualties) AS 
- Month_Name 
+ CY_Casulaties 
 FROM [ROAD ACCIDENTS] 
 WHERE YEAR(accident_date) = '2022' 
 GROUP BY DATENAME(MONTH,accident_date);
